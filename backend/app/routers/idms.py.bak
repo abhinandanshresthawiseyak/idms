@@ -1,0 +1,258 @@
+import glob
+from fastapi import APIRouter, HTTPException
+import os
+import json 
+from typing import Optional
+
+from app.utils import budgetexpense_to_json, quadrimesterexpense_to_json
+
+router = APIRouter()
+
+@router.get("/budget_expense/{city}")
+def get_data(city:str, month: Optional[str] = None):
+    directory_root="./data/"+city+"/budget_expense/"
+    if month is not None:
+        directory_path=directory_root+month
+        json_path = directory_path+"/data.json"
+
+        if os.path.exists(json_path):
+            print("JSON File Already Exists! No need further processing")
+            # Open the JSON file and load its content
+            with open(json_path, "r", encoding="utf-8") as json_file:
+                data = json.load(json_file)
+            
+            return {
+                "status":200,
+                "idms":city,
+                "month":month,
+                "topic": "budget_expense",
+                "data": data
+            }
+        
+        else:
+            print("No json file found, have to process entire excel file")
+            # Check if the file exists
+            if not os.path.exists(directory_path+'data.xlsx'):
+                raise HTTPException(status_code=404, detail="Excel file not found")
+            
+            try:
+                excel_path=directory_path+'data.xlsx'
+                json_data=budgetexpense_to_json(city=city, month=month, excel_path=excel_path)
+
+                return {
+                    "status": 200,
+                    "month":month,
+                    "idms":city,
+                    "topic": "budget_expense",
+                    "data": json_data
+                }
+
+            except Exception as e:
+                raise HTTPException(status_code=500, detail=f"Error processing file: {str(e)}")
+        
+    else:
+        # Return data for all months
+        all_data = []
+        try:
+            # List all subdirectories in the root directory (representing months)
+            for month_folder in os.listdir(directory_root):
+                directory_path = os.path.join(directory_root, month_folder)
+                json_path = os.path.join(directory_path, "data.json")
+                
+                if os.path.exists(json_path):
+                    # Load JSON data for each month
+                    with open(json_path, "r", encoding="utf-8") as json_file:
+                        month_data = json.load(json_file)
+                    all_data.append({
+                        "month": month_folder,
+                        "data": month_data
+                    })
+                else:
+                    # If no JSON exists, attempt to process the Excel file
+                    excel_path = os.path.join(directory_path, "data.xlsx")
+                    if os.path.exists(excel_path):
+                        json_data = budgetexpense_to_json(city=city, month=month_folder, excel_path=excel_path)
+                        all_data.append({
+                            "month": month_folder,
+                            "data": json.loads(json_data)
+                        })
+                    else:
+                        print(f"No data found for {month_folder}")
+            
+            return {
+                "status": 200,
+                "idms":city,
+                "topic": "budget_expense",
+                "data": all_data
+            }
+        
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Error processing data: {str(e)}")
+
+
+@router.get("/quadrimester_expense/{city}")
+def get_quadrimester_expense_data(city:str, year: Optional[str] = None):
+    directory_root="./data/"+city+"/quadrimester_expense/"
+    if year is not None:
+        directory_path=directory_root+year
+        json_path = directory_path+"/data.json"
+
+        if os.path.exists(json_path):
+            print("JSON File Already Exists! No need further processing")
+            # Open the JSON file and load its content
+            with open(json_path, "r", encoding="utf-8") as json_file:
+                data = json.load(json_file)
+            
+            return {
+                "status":200,
+                "idms":city,
+                "year":year,
+                "topic":"quadrimester_expense",
+                "data": data
+            }
+        
+        else:
+            print("No json file found, have to process entire excel file")
+
+            # Check if the file exists
+            # Find all .xlsx files in the given directory
+            xlsx_files = glob.glob(os.path.join(directory_root+year, "*.xlsx"))
+            # print(xlsx_files)
+            if xlsx_files:
+                excel_path=xlsx_files[0]
+            else:
+                raise HTTPException(status_code=404, detail="Excel file not found")
+            
+            try:
+                json_data=quadrimesterexpense_to_json(city=city, year=year, excel_path=excel_path)
+
+                return {
+                    "status": 200,
+                    "year":year,
+                    "idms":city,
+                    "topic":"quadrimester_expense",
+                    "data": json_data
+                }
+
+            except Exception as e:
+                raise HTTPException(status_code=500, detail=f"Error processing file: {str(e)}")
+        
+    else:
+        # Return data for all year
+        all_data = []
+        try:
+            # List all subdirectories in the root directory (representing months)
+            for year_folder in os.listdir(directory_root):
+                # print(year_folder)
+                directory_path = directory_root+year_folder
+                # print(directory_path)
+                json_path = os.path.join(directory_path, "data.json")
+                
+                if os.path.exists(json_path):
+                    # Load JSON data for each month
+                    with open(json_path, "r", encoding="utf-8") as json_file:
+                        month_data = json.load(json_file)
+                    all_data.append({
+                        "year": year_folder,
+                        "data": month_data
+                    })
+                else:
+                    # If no JSON exists, attempt to process the Excel file
+                    # excel_path = os.path.join(directory_path, "data.xlsx")
+                    file_path = directory_root+year
+
+                    # Find all .xlsx files in the given directory
+                    xlsx_files = glob.glob(os.path.join(file_path, "*.xlsx"))
+                    excel_path=xlsx_files[0]
+
+                    if os.path.exists(excel_path):
+                        json_data = quadrimesterexpense_to_json(city=city, year=year, excel_path=excel_path)
+                        all_data.append({
+                            "month": year_folder,
+                            "data": json.loads(json_data)
+                        })
+                    else:
+                        print(f"No data found for {year_folder}")
+            
+            return {
+                "status": 200,
+                "idms":city,
+                "topic":"quadrimester_expense",
+                "data": all_data
+            }
+        
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Error processing data: {str(e)}")
+
+# @router.get("/")
+# def get_data(month: Optional[str] = None):
+#     directory_root="./data/{city}/budget_expense/"
+#     if month is not None:
+#         directory_path=directory_root+month
+#         json_path = directory_path+"/data.json"
+
+#         if os.path.exists(json_path):
+#             print("JSON File Already Exists! No need further processing")
+#             # Open the JSON file and load its content
+#             with open(json_path, "r", encoding="utf-8") as json_file:
+#                 data = json.load(json_file)
+            
+#             return {
+#                 "status":200,
+#                 "data": data
+#             }
+        
+#         else:
+#             print("No json file found, have to process entire excel file")
+#             # Check if the file exists
+#             if not os.path.exists(directory_path+'data.xlsx'):
+#                 raise HTTPException(status_code=404, detail="Excel file not found")
+            
+#             try:
+#                 excel_path=directory_path+'data.xlsx'
+#                 json_data=excel_to_json(month=month, excel_path=excel_path)
+
+#                 return {
+#                     "status": 200,
+#                     "data": json_data
+#                 }
+
+#             except Exception as e:
+#                 raise HTTPException(status_code=500, detail=f"Error processing file: {str(e)}")
+        
+#     else:
+#         # Return data for all months
+#         all_data = []
+#         try:
+#             # List all subdirectories in the root directory (representing months)
+#             for month_folder in os.listdir(directory_root):
+#                 directory_path = os.path.join(directory_root, month_folder)
+#                 json_path = os.path.join(directory_path, "data.json")
+                
+#                 if os.path.exists(json_path):
+#                     # Load JSON data for each month
+#                     with open(json_path, "r", encoding="utf-8") as json_file:
+#                         month_data = json.load(json_file)
+#                     all_data.append({
+#                         "month": month_folder,
+#                         "data": month_data
+#                     })
+#                 else:
+#                     # If no JSON exists, attempt to process the Excel file
+#                     excel_path = os.path.join(directory_path, "data.xlsx")
+#                     if os.path.exists(excel_path):
+#                         json_data = excel_to_json(month=month_folder, excel_path=excel_path)
+#                         all_data.append({
+#                             "month": month_folder,
+#                             "data": json.loads(json_data)
+#                         })
+#                     else:
+#                         print(f"No data found for {month_folder}")
+            
+#             return {
+#                 "status": 200,
+#                 "data": all_data
+#             }
+        
+#         except Exception as e:
+#             raise HTTPException(status_code=500, detail=f"Error processing data: {str(e)}")

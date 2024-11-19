@@ -1,0 +1,46 @@
+# Use Python 3.10.12 as the base image
+FROM python:3.10.12-slim
+
+# Install dependencies for Chrome and ChromeDriver
+RUN apt-get update && \
+    apt-get install -y wget curl gnupg unzip cron && \
+    wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && \
+    echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list && \
+    apt-get update && \
+    apt-get install -y google-chrome-stable && \
+    rm -rf /var/lib/apt/lists/*
+
+# Install ChromeDriver
+RUN CHROME_DRIVER_VERSION=$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE) && \
+    wget -O /tmp/chromedriver.zip "https://chromedriver.storage.googleapis.com/${CHROME_DRIVER_VERSION}/chromedriver_linux64.zip" && \
+    unzip /tmp/chromedriver.zip -d /usr/local/bin/ && \
+    rm /tmp/chromedriver.zip
+
+# Install Selenium
+RUN pip install selenium requests bs4 python-Levenshtein
+
+RUN rm -rf /usr/local/bin/chromedriver
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Add a cron job to run the crawler every 2 minutes and log output
+# RUN echo "*/2 * * * * cd /app/crawler && /usr/local/bin/python crawler.py >> /app/crawler/crawler.log 2>&1 && echo $(date +\"%Y-%m-%dT%H:%M:%S\") > /app/crawler/last_run_timestamp.txt" > /etc/cron.d/crawler_cron
+
+# RUN echo "*/2 * * * * cd /app/crawler && /usr/local/bin/python crawler.py >> /app/crawler/crawler.log 2>&1 && /usr/bin/echo \$(date +\"%Y-%m-%dT%H:%M:%S\") > /app/crawler/last_run_timestamp.txt" > /etc/cron.d/crawler_cron
+
+# # Apply cron job and set permissions
+# RUN chmod 0644 /etc/cron.d/crawler_cron && \
+#     crontab /etc/cron.d/crawler_cron
+
+# # Start the cron service and keep the container running
+# CMD ["cron", "-f"]
+
+# # Keep the container running
+CMD ["tail", "-f", "/dev/null"]
+
+# Copy your script into the container (optional)
+# COPY your_script.py /app/your_script.py
+
+# Run the script (optional)
+# CMD ["python", "/app/your_script.py"]

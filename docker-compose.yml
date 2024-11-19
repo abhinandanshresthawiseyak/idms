@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  idms_backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: idms_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+  
+  crawler:
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile.crawler
+    container_name: crawler
+    volumes:
+      - .:/app
+
