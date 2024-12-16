@@ -1,0 +1,31 @@
+https://data.lekbeshimun.gov.np/datasets/health-dpt-data स्वास्थ्य कर्मचारी विवरण (२०७८-७९) (२०८०-०८१) 2024-10-30 00:00:00
+h4==previewbutton True
+{'स्वास्थ्य कर्मचारी विवरण (२०८०-०८१)': 'https://dms.lekbeshimun.gov.np/dataset/e4a37dfb-f978-46b4-b402-9cdacc08e972/resource/cd7a5513-ee59-48cc-8655-a07315b366e3/download/-copy-2.xlsx', 'स्वास्थ्य कर्मचारी विवरण (२०७८-०७९)': 'https://dms.lekbeshimun.gov.np/dataset/e4a37dfb-f978-46b4-b402-9cdacc08e972/resource/8e988fbe-5e0e-4529-ae5e-9ec2a30034ae/download/-33.xlsx'}
+File '/app/backend/data/lekbeshi/health_employee_details/2080-81/स्वास्थ्य कर्मचारी विवरण (२०८०-०८१).xlsx' already exists.
+--2024-12-16 10:51:35--  https://dms.lekbeshimun.gov.np/dataset/e4a37dfb-f978-46b4-b402-9cdacc08e972/resource/cd7a5513-ee59-48cc-8655-a07315b366e3/download/-copy-2.xlsx
+Resolving dms.lekbeshimun.gov.np (dms.lekbeshimun.gov.np)... 103.175.192.149
+Connecting to dms.lekbeshimun.gov.np (dms.lekbeshimun.gov.np)|103.175.192.149|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 24444 (24K) [application/vnd.openxmlformats-officedocument.spreadsheetml.sheet]
+Saving to: ‘/tmp/tmparuvj36i/temp.xlsx’
+
+     0K .......... .......... ...                             100%  210M=0s
+
+2024-12-16 10:51:35 (210 MB/s) - ‘/tmp/tmparuvj36i/temp.xlsx’ saved [24444/24444]
+
+File 'स्वास्थ्य कर्मचारी विवरण (२०८०-०८१).xlsx' hasn't been modified. Skipping replacing
+File '/app/backend/data/lekbeshi/health_employee_details/2078-79/स्वास्थ्य कर्मचारी विवरण (२०७८-०७९).xlsx' already exists.
+--2024-12-16 10:51:35--  https://dms.lekbeshimun.gov.np/dataset/e4a37dfb-f978-46b4-b402-9cdacc08e972/resource/8e988fbe-5e0e-4529-ae5e-9ec2a30034ae/download/-33.xlsx
+Resolving dms.lekbeshimun.gov.np (dms.lekbeshimun.gov.np)... 103.175.192.149
+Connecting to dms.lekbeshimun.gov.np (dms.lekbeshimun.gov.np)|103.175.192.149|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 17206 (17K) [application/vnd.openxmlformats-officedocument.spreadsheetml.sheet]
+Saving to: ‘/tmp/tmpdjalwcam/temp.xlsx’
+
+     0K .......... ......                                     100%  332M=0s
+
+2024-12-16 10:51:36 (332 MB/s) - ‘/tmp/tmpdjalwcam/temp.xlsx’ saved [17206/17206]
+
+File 'स्वास्थ्य कर्मचारी विवरण (२०७८-०७९).xlsx' hasn't been modified. Skipping replacing
+https://data.lekbeshimun.gov.np/datasets/progress-report लेकवेशी नगरपालिका प्रगति विवरण २०८१ ०८२ 2024-12-05 00:00:00
+h4==previewbutton True

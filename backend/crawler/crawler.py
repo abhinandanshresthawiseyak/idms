@@ -205,7 +205,7 @@ def save_file_to_location(excel_title_links, city):
         '': []
     }
 
-    base_path = f"/app/data/{city}"
+    base_path = f"/app/backend/data/{city}"
 
     for key, url in excel_title_links.items():
         topic = None

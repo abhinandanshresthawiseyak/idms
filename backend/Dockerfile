@@ -27,6 +27,9 @@ COPY . /app
 # Install any necessary dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Install Selenium
+RUN pip install selenium requests bs4 python-Levenshtein
+
 # Expose port 8000 to the outside world
 EXPOSE 8000
 

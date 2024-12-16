@@ -1,15 +1,15 @@
-import json
+import json, os
 from typing import List, Optional
 from fastapi import FastAPI, Query, HTTPException, Request
 # from app.routers import budget_expense, quadrimester_expense, local_activities, 
-from app.routers import api, quadrimester_expense, budget_expense, local_activities
+from app.routers import dashboard, quadrimester_expense, budget_expense, local_activities
 from app.utils import TokenBucket
 from starlette.middleware.base import BaseHTTPMiddleware
 from collections import defaultdict
 from fastapi.middleware.cors import CORSMiddleware
 
 # A dictionary to store a TokenBucket for each client with blocking duration 15 sec and refill_rate 1 token/s with 5 tokens capacity 
-buckets = defaultdict(lambda: TokenBucket(capacity=5, refill_rate=1, block_duration=15))
+buckets = defaultdict(lambda: TokenBucket(capacity=35, refill_rate=1, block_duration=15))
 
 # A middleware class to limit API Calls for every client with IP Address 
 class RateLimiterMiddleware(BaseHTTPMiddleware):
@@ -33,7 +33,7 @@ class RateLimiterMiddleware(BaseHTTPMiddleware):
 app = FastAPI()
 
 # Middleware to restrict Dos Attack 
-app.add_middleware(RateLimiterMiddleware)
+app.add_middleware(RateLimiterMiddleware) 
 
 app.add_middleware(
     CORSMiddleware,
@@ -47,8 +47,8 @@ app.add_middleware(
 # app.include_router(quadrimester_expense.router)
 app.include_router(budget_expense.router)
 app.include_router(local_activities.router)
-app.include_router(api.router)
 app.include_router(quadrimester_expense.router)
+app.include_router(dashboard.router)
 # app.include_router(idms.router)
 # app.include_router(lekbeshi.router)
 # app.include_router(tulsipur.router)
@@ -57,5 +57,7 @@ app.include_router(quadrimester_expense.router)
 def read_root(request: Request):
     
     return {"message": f"Welcome to the FastAPI application! {request.client.host}"}
+
+
 
 

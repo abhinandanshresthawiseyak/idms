@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "/app/backend/crawler/crawler.py", line 28, in <module>
+    driver = webdriver.Chrome(options=chrome_options) # Initialize WebDriver with options
+  File "/usr/local/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/usr/local/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/usr/local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 238, in __init__
+    self.start_session(capabilities)
+  File "/usr/local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 325, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/usr/local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created
+from disconnected: unable to connect to renderer
+Stacktrace:
+#0 0x57e96cf5431a <unknown>
+#1 0x57e96ca6a6e0 <unknown>
+#2 0x57e96caa7e37 <unknown>
+#3 0x57e96caa27fc <unknown>
+#4 0x57e96ca9d926 <unknown>
+#5 0x57e96cae96f6 <unknown>
+#6 0x57e96cae8d46 <unknown>
+#7 0x57e96cadd203 <unknown>
+#8 0x57e96caabcc0 <unknown>
+#9 0x57e96caacc9e <unknown>
+#10 0x57e96cf21d0b <unknown>
+#11 0x57e96cf25c92 <unknown>
+#12 0x57e96cf0eb3c <unknown>
+#13 0x57e96cf26807 <unknown>
+#14 0x57e96cef40df <unknown>
+#15 0x57e96cf43578 <unknown>
+#16 0x57e96cf43740 <unknown>
+#17 0x57e96cf53196 <unknown>
+#18 0x7c4e673e61c4 <unknown>
+

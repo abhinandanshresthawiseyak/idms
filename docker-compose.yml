@@ -6,6 +6,7 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     container_name: idms_backend
+    hostname: idms_backend
     ports:
       - "8000:8000"
     volumes:
@@ -24,6 +25,10 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
     container_name: frontend
-    
+    ports:
+      - '3001:3001'
+    environment:
+        # VITE_BASE_URL: 'http://192.168.88.10:8000'
+        VITE_BASE_URL: 'http://idms_backend:8000'
     volumes:
       - .:/app

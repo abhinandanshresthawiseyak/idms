@@ -1,0 +1,165 @@
+https://data.lekbeshimun.gov.np/datasets/health-dpt-data स्वास्थ्य कर्मचारी विवरण (२०७८-७९) (२०८०-०८१) 2024-10-30 00:00:00
+h4==previewbutton True
+{'स्वास्थ्य कर्मचारी विवरण (२०८०-०८१)': 'https://dms.lekbeshimun.gov.np/dataset/e4a37dfb-f978-46b4-b402-9cdacc08e972/resource/cd7a5513-ee59-48cc-8655-a07315b366e3/download/-copy-2.xlsx', 'स्वास्थ्य कर्मचारी विवरण (२०७८-०७९)': 'https://dms.lekbeshimun.gov.np/dataset/e4a37dfb-f978-46b4-b402-9cdacc08e972/resource/8e988fbe-5e0e-4529-ae5e-9ec2a30034ae/download/-33.xlsx'}
+File '/app/data/lekbeshi/health_employee_details/2080-81/स्वास्थ्य कर्मचारी विवरण (२०८०-०८१).xlsx' already exists.
+--2024-12-04 08:16:36--  https://dms.lekbeshimun.gov.np/dataset/e4a37dfb-f978-46b4-b402-9cdacc08e972/resource/cd7a5513-ee59-48cc-8655-a07315b366e3/download/-copy-2.xlsx
+Resolving dms.lekbeshimun.gov.np (dms.lekbeshimun.gov.np)... 103.175.192.149
+Connecting to dms.lekbeshimun.gov.np (dms.lekbeshimun.gov.np)|103.175.192.149|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 24444 (24K) [application/vnd.openxmlformats-officedocument.spreadsheetml.sheet]
+Saving to: ‘/tmp/tmpjr7b6cuq/temp.xlsx’
+
+     0K .......... .......... ...                             100%  205M=0s
+
+2024-12-04 08:16:37 (205 MB/s) - ‘/tmp/tmpjr7b6cuq/temp.xlsx’ saved [24444/24444]
+
+File 'स्वास्थ्य कर्मचारी विवरण (२०८०-०८१).xlsx' hasn't been modified. Skipping replacing
+File '/app/data/lekbeshi/health_employee_details/2078-79/स्वास्थ्य कर्मचारी विवरण (२०७८-०७९).xlsx' already exists.
+--2024-12-04 08:16:37--  https://dms.lekbeshimun.gov.np/dataset/e4a37dfb-f978-46b4-b402-9cdacc08e972/resource/8e988fbe-5e0e-4529-ae5e-9ec2a30034ae/download/-33.xlsx
+Resolving dms.lekbeshimun.gov.np (dms.lekbeshimun.gov.np)... 103.175.192.149
+Connecting to dms.lekbeshimun.gov.np (dms.lekbeshimun.gov.np)|103.175.192.149|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 17206 (17K) [application/vnd.openxmlformats-officedocument.spreadsheetml.sheet]
+Saving to: ‘/tmp/tmp5rdcoe17/temp.xlsx’
+
+     0K .......... ......                                     100%  203M=0s
+
+2024-12-04 08:16:37 (203 MB/s) - ‘/tmp/tmp5rdcoe17/temp.xlsx’ saved [17206/17206]
+
+File 'स्वास्थ्य कर्मचारी विवरण (२०७८-०७९).xlsx' hasn't been modified. Skipping replacing
+https://data.lekbeshimun.gov.np/datasets/progress-report लेकवेशी नगरपालिका प्रगति विवरण २०८१ ०८२ 2024-11-21 00:00:00
+h4==previewbutton True
+Message: 
+Stacktrace:
+#0 0x5dafd091e34a <unknown>
+#1 0x5dafd04346e0 <unknown>
+#2 0x5dafd04833e6 <unknown>
+#3 0x5dafd0483681 <unknown>
+#4 0x5dafd04c8b04 <unknown>
+#5 0x5dafd04a748d <unknown>
+#6 0x5dafd04c5ed7 <unknown>
+#7 0x5dafd04a7203 <unknown>
+#8 0x5dafd0475cc0 <unknown>
+#9 0x5dafd0476c9e <unknown>
+#10 0x5dafd08ebd3b <unknown>
+#11 0x5dafd08efcc2 <unknown>
+#12 0x5dafd08d8b6c <unknown>
+#13 0x5dafd08f0837 <unknown>
+#14 0x5dafd08be10f <unknown>
+#15 0x5dafd090d5a8 <unknown>
+#16 0x5dafd090d770 <unknown>
+#17 0x5dafd091d1c6 <unknown>
+#18 0x7add67dcd1c4 <unknown>
+
+{}
+https://data.lekbeshimun.gov.np/datasets/administration-data लेकवेशी कर्मचारी विवरण २०७९ 2023-09-13 00:00:00
+h4==previewbutton True
+{'लेकवेशी कर्मचारी विवरण २०७९.xlsx': 'https://dms.lekbeshimun.gov.np/dataset/c8784466-9ae2-496e-a8a3-d17dd6fd8128/resource/0aa4f7c4-bfa3-4289-a8e1-9373a2fe3f34/download/-.xlsx'}
+Could not determine topic or folder name for लेकवेशी कर्मचारी विवरण २०७९.xlsx. Skipping.
+https://data.lekbeshimun.gov.np/datasets/land-department-data-set पूर्जा बितरण  २०८०/०८१ 2024-11-25 00:00:00
+h4==previewbutton True
+{'जग्गाको विवरण.xlsx': 'https://dms.lekbeshimun.gov.np/dataset/92f3fa71-7233-4581-aa38-a3017e6adc5a/resource/9d4faa6e-78df-4d75-b5b2-35afadd41433/download/book1-.xlsx'}
+Could not determine topic or folder name for जग्गाको विवरण.xlsx. Skipping.
+https://data.lekbeshimun.gov.np/datasets/firt-progress-report पहिलो त्रैमासिक विवरण २०८१-०८२ 2024-11-21 00:00:00
+h4==previewbutton True
+{'पहिलो त्रैमासिक विवरण २०८१-०८२': 'https://dms.lekbeshimun.gov.np/dataset/2b1cbb82-a45e-46bf-bbb5-afdc25394eb0/resource/1cc8b704-9e91-47f4-8bad-fee82a91a288/download/-.xlsx'}
+Could not determine topic or folder name for पहिलो त्रैमासिक विवरण २०८१-०८२. Skipping.
+https://data.lekbeshimun.gov.np/datasets/data-of-agriculture कृषि कार्यक्रम तथा बजेट विवरण २०८१-०८२ 2024-11-27 00:00:00
+h4==previewbutton True
+{'आ.व २०८१/०८२ पहिलो त्रैमासिक प्रगति विवरण ।': 'https://dms.lekbeshimun.gov.np/dataset/75ad178d-06d7-4395-9634-a67b7a1c9c34/resource/bc5dfb05-211f-476b-8535-ad3b24f21686/download/-37.xlsx'}
+Could not determine topic or folder name for आ.व २०८१/०८२ पहिलो त्रैमासिक प्रगति विवरण ।. Skipping.
+https://data.tulsipurmun.gov.np/datasets/wardwise-disability-id-card-data Wardwise Disability ID Card Data 2024-07-19 00:00:00
+h4==previewbutton True
+{'Disability ID Card Report upto fiscal year 2080.81.xlsx': 'https://dms.tulsipurmun.gov.np/dataset/bbbd7b66-2d8e-4bfd-b9ed-d2f7679cf599/resource/3f95728f-916d-417d-9557-e67abdbd7110/download/disability-id-card-report-upto-fiscal-year-2080.81.xlsx'}
+Could not determine topic or folder name for Disability ID Card Report upto fiscal year 2080.81.xlsx. Skipping.
+https://data.tulsipurmun.gov.np/datasets/tulsipur-students-details Tulsipur Students Details- 2080 2024-09-26 00:00:00
+h4==previewbutton True
+{"Tulsipur Students' Details 2080": 'https://dms.tulsipurmun.gov.np/dataset/8b0d64f1-98e7-4fe1-8317-c739b7badf47/resource/5f7f82e2-bbe4-474f-b240-014c58896f04/download/student-details-of-public-school.xlsx'}
+Could not determine topic or folder name for Tulsipur Students' Details 2080. Skipping.
+https://data.tulsipurmun.gov.np/datasets/students-drop-out-record-2078 Students'  Drop Out Record 2078 2024-07-23 00:00:00
+h4==previewbutton True
+{"Student's drop out 2079 xlsx": 'https://dms.tulsipurmun.gov.np/dataset/95744137-bf74-4653-98f3-4fad95075368/resource/4894388d-1483-4942-bc16-6e94eeed2260/download/download.xlsx'}
+Could not determine topic or folder name for Student's drop out 2079 xlsx. Skipping.
+https://data.tulsipurmun.gov.np/datasets/students-details-of-private-school-of-2080-of-tulsipur-submetropolitican-city Students Details of Private School of 2080 of Tulsipur Submetropolitican City 2024-09-18 00:00:00
+h4==previewbutton True
+{'Student Details Private school 2081.xlsx': 'https://dms.tulsipurmun.gov.np/dataset/eeaa59f3-443b-4c4e-be64-e219c6b97419/resource/ebd8cbfc-2596-4776-b72b-fa26ed2d6bc6/download/student-details-private-school-2081.xlsx'}
+Could not determine topic or folder name for Student Details Private school 2081.xlsx. Skipping.
+https://data.tulsipurmun.gov.np/datasets/students-details-of-public-school-of-the-year-2081-of-tulsipur-sub-metropolitican-city Students Details Of Public School Of the year 2081 of Tulsipur Sub metropolitican City 2024-09-18 00:00:00
+h4==previewbutton True
+{'Student Details Public School 2081.xlsx': 'https://dms.tulsipurmun.gov.np/dataset/ea14d613-e2b1-47c6-be15-216b1d0a6ec7/resource/3bd5c726-c6c8-4526-a6bf-4fa224ffedd7/download/student-details-public-school-2081.xlsx'}
+Could not determine topic or folder name for Student Details Public School 2081.xlsx. Skipping.
+https://data.tulsipurmun.gov.np/datasets/social-security-3trimester-report Social Security Third Trimester Report of FY 2080/81 2024-10-25 00:00:00
+h4==previewbutton True
+{'Dang Tulsipur SSNP budget Forecasting report of FY 2080/81': 'https://dms.tulsipurmun.gov.np/dataset/79bd2088-b0a8-4f6c-98d3-80db02d46d63/resource/382e53d2-ac1b-4439-adbc-fd6d765eca72/download/___'}
+Could not determine topic or folder name for Dang Tulsipur SSNP budget Forecasting report of FY 2080/81. Skipping.
+https://data.tulsipurmun.gov.np/datasets/school-teacher-report School Teacher Report 2077 2024-07-24 00:00:00
+h4==previewbutton True
+{'School Teacher Report.xlsx': 'https://dms.tulsipurmun.gov.np/dataset/0e2290cb-d9b6-46f3-b936-8dc154e09974/resource/7e67c800-7351-472c-8db4-e857f5befe8a/download/school-teacher-report.xlsx'}
+Could not determine topic or folder name for School Teacher Report.xlsx. Skipping.
+https://data.tulsipurmun.gov.np/datasets/repeaters-students-2079 Repeaters students- 2079 2024-07-23 00:00:00
+h4==previewbutton True
+{'Repeaters students 2079': 'https://dms.tulsipurmun.gov.np/dataset/b2f036de-8dc8-430b-b9eb-5e1d4079a999/resource/52aac690-4a6c-4543-9e4b-3a78f915993f/download/repeaters-2079.xlsx'}
+Could not determine topic or folder name for Repeaters students 2079. Skipping.
+https://data.tulsipurmun.gov.np/datasets/relief-distribution-data-of-the-fy-2080-081 Relief Distribution Data of the FY 2080/081 2024-10-23 00:00:00
+h4==previewbutton True
+{'Relief Distribution on FY 2080/81': 'https://dms.tulsipurmun.gov.np/dataset/038c19dc-6cdb-4930-b6b8-25651b5804a4/resource/ec973e71-07db-4a6a-9cd5-d5d6d0bf0470/download/relief-distribution-data.xlsx'}
+Could not determine topic or folder name for Relief Distribution on FY 2080/81. Skipping.
+https://data.tulsipurmun.gov.np/datasets/promoters-students-2079 Promoters students- 2079 2024-07-24 00:00:00
+h4==previewbutton True
+{'Promoters students 2079': 'https://dms.tulsipurmun.gov.np/dataset/b3c2fd38-9639-4ca2-9fcf-2a9c43bc00bc/resource/eef01793-0fa0-4099-84e1-6376e145700c/download/promoters-2079.xlsx'}
+Could not determine topic or folder name for Promoters students 2079. Skipping.
+https://data.birgunjmun.gov.np/datasets/environment-section-record स्वीकृत तथा सिफारिस गरिएका वातावरण अध्ययन प्रतिवेदनहरुको सुची 2024-08-29 00:00:00
+h4==previewbutton True
+{'स्वीकृत प्रतिवेदन तथा सिफारिसहरु.xlsx': 'https://dms.birgunjmun.gov.np/dataset/84db9a1d-57ac-456c-b9b6-fb419032370b/resource/f1f46dce-a535-4f6f-824b-ab1ee4b0f6ea/download/-.xlsx'}
+Could not determine topic or folder name for स्वीकृत प्रतिवेदन तथा सिफारिसहरु.xlsx. Skipping.
+https://data.birgunjmun.gov.np/datasets/sadhan-ra-subidha-ko-awastha साधन र सुबिधाको अवस्था 2024-10-24 00:00:00
+h4==previewbutton True
+{'अनुसूची-१० सुबिधाको अवस्था .xlsx': 'https://dms.birgunjmun.gov.np/dataset/a2b555f1-ef12-417b-9dcb-ab7097e8e04f/resource/ab0040ec-1261-448b-aee6-c8c55ef0be3a/download/anuschi-subidha-ko-awastha.xlsx'}
+Could not determine topic or folder name for अनुसूची-१० सुबिधाको अवस्था .xlsx. Skipping.
+https://data.birgunjmun.gov.np/datasets/cooperative-financial-statements सहकारी संस्थाहरुको वित्तिय विवरण 2024-07-09 00:00:00
+h4==previewbutton True
+{'सहकारी संस्थाहरु र संस्थाहरुको वित्तिय विवरण': 'https://dms.birgunjmun.gov.np/dataset/3d73c3f5-de17-44f2-b2da-6b46620aa7a6/resource/ed9dd7ed-0caf-40c2-9bd8-767d23c64bae/download/sahakari-bibaran.xlsx'}
+Could not determine topic or folder name for सहकारी संस्थाहरु र संस्थाहरुको वित्तिय विवरण. Skipping.
+https://data.birgunjmun.gov.np/datasets/https-dms-birgunjmun-gov-np-dataset-new-group-1609904b-b25f-458e-8ba6-7ed7ee861da3 वीरगंज महानगरपालिका अन्तर्गतका विभिन्‍न वडा कार्यालयहरुमा सचिवहरुको नामावली र सम्पर्क नं. 2024-01-23 00:00:00
+h4==previewbutton True
+{'ward wise karmachari.xlsx': 'https://dms.birgunjmun.gov.np/dataset/0f814717-38e3-4bf7-9677-5bef0fe7c209/resource/20974ca2-68bf-4fe1-a020-d7e57616dd15/download/ward-wise-karmachari.xlsx'}
+Could not determine topic or folder name for ward wise karmachari.xlsx. Skipping.
+https://data.birgunjmun.gov.np/datasets/dms-birgunjmun-gov-np-dataset-new-group-1609904b-b25f-458e-8ba6-7ed7ee861da3 वीरगंज महानगरपालिका अन्तर्गतका वडा अध्यक्ष र कार्यपालिका सदस्यज्यूहरुको सम्पर्क नं. 2024-01-07 00:00:00
+h4==previewbutton True
+{'वडा अध्यक्ष तथा वडा सदस्यहरुको नामावली विवरण.xlsx': 'https://dms.birgunjmun.gov.np/dataset/403999ec-9f1e-49ac-8a33-99b1a3986b12/resource/1f204871-e26e-4a4c-8c1d-e48c85cac253/download/-.xlsx'}
+Could not determine topic or folder name for वडा अध्यक्ष तथा वडा सदस्यहरुको नामावली विवरण.xlsx. Skipping.
+https://data.birgunjmun.gov.np/datasets/national-census-digital-profile वीरगंज जनसकङ्ख्किक प्रतिवेदन 2024-09-13 00:00:00
+h4==previewbutton True
+{'अनुसुचि १७ - ज्येष्ठ नागरिक र सामाजिक सुरक्षा भत्ता प्राप्त गर्न योग्य जनसङ्ख्याको वितरण': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/f4c26acf-deff-4deb-b31a-0251a4d5e49d/download/anusuchi-17-jesstha-nagrik-bhatta-khane-ko-sankhya.xlsx', 'अनुसुचि १८ - वडा अनुसार परिवारमुलिको विवरण': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/8687f1f2-c2a7-48cd-977f-f5cd8545404f/download/anusuchi-18-ward-anusar-pariwar-muliko-awastha.xlsx', 'अनुसुचि १९ - वडा अनुसार विवाह दर्ताको अवस्था': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/936878f2-7059-43dd-bb59-a9ef7df6f68a/download/anusuchi-19-ward-anusr-balbihawa-darta-ko-awastha.xlsx', 'अनुसुचि २० - वडा अनुसार १० वर्ष र सोभन्दा बढि ऊमेरका एकल महिलाको अवस्था': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/6041b2ee-dc25-43ee-9059-3d67048c8685/download/anusuchi-20-ward-anusar-10-barsa-vanda-kam-umer-ko-akal-mahila.xlsx', 'अनुसुचि २१ - वडा अनुसार अपाङ्गता भएका व्यक्तिको दर': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/11fe060f-3333-4038-92bc-c8fa276858b5/download/anusuchi-21-ward-anusar-apangta-byakti-haru-bibaran.xlsx', 'अनुसुचि २२ - ५ वर्ष र सोभन्दा बढि ऊमेरको साक्षरता विवरण': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/cdd4c6e1-8a2e-4622-9a71-61eccc98925a/download/anusuchi-22-5-barsa-vanda-badhi-umer-ko-sacharta-bibaran.xlsx', 'अनुसुचि २३ - वडा अनुसार बालबालिकाको साक्षरता दर': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/abde6860-a5d6-4102-b0dc-b4c9a552b494/download/anusuchi-.xlsx', 'अनुसुचि २४ - ५ देखि २५ वर्षका हाल स्कुल गईरहेको वा विगतमा गएको वा कहिल्यै नगएको विवरण': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/ad264576-52d4-47b2-b8e7-65fdbefa5ab3/download/anusuchi-24-5-barsa-dekhi-25-barsa-samma-school-gaeraheka-bigat-ma-gayeka-ra-kahilai-nagayeka-s.xlsx', 'अनुसुचि २५ - वडा अनुसार ५ देखि २५ वर्षका स्कुल कलेज भाहिर रहेका व्यक्तिहरुको विवरण': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/f46ec2e5-a79b-4603-967a-d3ab38511894/download/-.xlsx', 'अनुसुचि २६ - वडा अनुसार जन्मस्थानको आधारमा जनसङ्ख्या विवरण': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/e7ac94d6-0ecc-43bb-9dab-95a0eab5b638/download/anusuchi-26-janma-sthan-ko-adharma-jansankhya-bibaran.xlsx', 'अनुसुचि २७ - वडा अनुसार १० वर्ष र सोभन्दा बढि ऊमेरका व्यक्तिको अघिल्लो १२ महिनामा कम्तिमा एक दिन आर्थिक काममा संलग्नता': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/74c2ff2a-7d9e-4667-a488-edb7e80acd12/download/anusuchi-27.xlsx', 'अनुसुचि २८ - वडा अनुसार १० वर्ष देखि १७ वर्ष ऊमेरका व्यक्तिको अघिल्लो १२ महिनामा कम्तिमा एक दिन आर्थिक काममा संलग्नता': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/6ae06a0a-8ea9-47d9-95e4-542520329903/download/-.xlsx', 'अनुसुचि २९ - आर्थिक काममा संलग्न मध्ये आर्थिक रुपले सक्रिय तथा रोजगार बेरोजगारको विवरण': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/07aa3efe-089b-4a2f-a97e-27bf5034b6e3/download/anusuchi-29.xlsx', 'अनुसुचि ३० - कृषि तथा गैर कृषि क्षेत्रमा संलग्न जनसङ्ख्या (% मा)': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/fa7c3a45-68af-46c6-8a08-0a7a2ac31a26/download/anusuchi-30.xlsx', 'अनुसुचि ३१ - ५ वर्ष र सोभन्दा बढि ऊमेरका बालबालिकाको जन्मदर्ताको अवस्था': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/3e880be9-0aa3-421f-b2b0-51a3d85937da/download/anusuchi-31.xlsx', 'अनुसुचि -१६ वडा अनुसार बाल आश्रित , ज्येसठ नागरिकआश्रित र कुल आश्रित अनुपात': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/027e36ec-41cf-4400-b290-cb44e1ebb0ce/download/anusuchi-16.xlsx'}
+Could not determine topic or folder name for अनुसुचि १७ - ज्येष्ठ नागरिक र सामाजिक सुरक्षा भत्ता प्राप्त गर्न योग्य जनसङ्ख्याको वितरण. Skipping.
+Could not determine topic or folder name for अनुसुचि १८ - वडा अनुसार परिवारमुलिको विवरण. Skipping.
+Could not determine topic or folder name for अनुसुचि १९ - वडा अनुसार विवाह दर्ताको अवस्था. Skipping.
+Could not determine topic or folder name for अनुसुचि २० - वडा अनुसार १० वर्ष र सोभन्दा बढि ऊमेरका एकल महिलाको अवस्था. Skipping.
+Could not determine topic or folder name for अनुसुचि २१ - वडा अनुसार अपाङ्गता भएका व्यक्तिको दर. Skipping.
+Could not determine topic or folder name for अनुसुचि २२ - ५ वर्ष र सोभन्दा बढि ऊमेरको साक्षरता विवरण. Skipping.
+Could not determine topic or folder name for अनुसुचि २३ - वडा अनुसार बालबालिकाको साक्षरता दर. Skipping.
+Could not determine topic or folder name for अनुसुचि २४ - ५ देखि २५ वर्षका हाल स्कुल गईरहेको वा विगतमा गएको वा कहिल्यै नगएको विवरण. Skipping.
+Could not determine topic or folder name for अनुसुचि २५ - वडा अनुसार ५ देखि २५ वर्षका स्कुल कलेज भाहिर रहेका व्यक्तिहरुको विवरण. Skipping.
+Could not determine topic or folder name for अनुसुचि २६ - वडा अनुसार जन्मस्थानको आधारमा जनसङ्ख्या विवरण. Skipping.
+Could not determine topic or folder name for अनुसुचि २७ - वडा अनुसार १० वर्ष र सोभन्दा बढि ऊमेरका व्यक्तिको अघिल्लो १२ महिनामा कम्तिमा एक दिन आर्थिक काममा संलग्नता. Skipping.
+Could not determine topic or folder name for अनुसुचि २८ - वडा अनुसार १० वर्ष देखि १७ वर्ष ऊमेरका व्यक्तिको अघिल्लो १२ महिनामा कम्तिमा एक दिन आर्थिक काममा संलग्नता. Skipping.
+Could not determine topic or folder name for अनुसुचि २९ - आर्थिक काममा संलग्न मध्ये आर्थिक रुपले सक्रिय तथा रोजगार बेरोजगारको विवरण. Skipping.
+Could not determine topic or folder name for अनुसुचि ३० - कृषि तथा गैर कृषि क्षेत्रमा संलग्न जनसङ्ख्या (% मा). Skipping.
+Could not determine topic or folder name for अनुसुचि ३१ - ५ वर्ष र सोभन्दा बढि ऊमेरका बालबालिकाको जन्मदर्ताको अवस्था. Skipping.
+Could not determine topic or folder name for अनुसुचि -१६ वडा अनुसार बाल आश्रित , ज्येसठ नागरिकआश्रित र कुल आश्रित अनुपात. Skipping.
+https://data.birgunjmun.gov.np/datasets/xlsx विपद् व्यवस्थापन साखा अन्तर्गत गरिएका कार्यहरुको विवरण xlsx 2024-08-29 00:00:00
+h4==previewbutton True
+{'विपद् व्यवस्थापन साखा अन्तर्गत गरिएका कार्यहरुको विवरण.xlsx': 'https://dms.birgunjmun.gov.np/dataset/28d3a4d7-29ba-4fb5-a22f-1c7b5589deae/resource/190d1745-a4b5-4aa3-a5f1-d1ba1c3d70a9/download/-.xlsx'}
+Could not determine topic or folder name for विपद् व्यवस्थापन साखा अन्तर्गत गरिएका कार्यहरुको विवरण.xlsx. Skipping.
+https://data.birgunjmun.gov.np/datasets/wada-anusar-mahila-ko-naam-ma-ghar-jagga-hune-pariwar वडा अनुसार महिलाको नाममा घर जग्गा भएका परिवार 2024-10-24 00:00:00
+h4==previewbutton True
+{'अनुसूची -१३ .xlsx': 'https://dms.birgunjmun.gov.np/dataset/efda2d0e-7f0f-4b88-97c6-52cf6b1ebcc5/resource/d08acfef-3a29-4f95-bd44-61383bdbb975/download/anusuchi-13.xlsx'}
+Could not determine topic or folder name for अनुसूची -१३ .xlsx. Skipping.
+https://data.birgunjmun.gov.np/datasets/pradhanmantri-rojgar-karyakaram-ko-yojana-xlsx प्रधानमन्त्री रोजगार कार्यक्रमको योजना रिपोर्ट. xlsx 2024-10-20 00:00:00
+h4==previewbutton True
+{'PROGRESS REPORT OF PMEP 2079-80': 'https://dms.birgunjmun.gov.np/dataset/5d9188a4-c99d-4fb9-977c-a297ae0fe055/resource/f8a5f676-bf62-46b4-b3c4-95aa4eb7985e/download/pmep-2079-80.xlsx'}
+Could not determine topic or folder name for PROGRESS REPORT OF PMEP 2079-80. Skipping.
+https://data.birgunjmun.gov.np/datasets/pariwarik-bibaran-2078 पारिवारिक विवरण २०७८ 2024-11-14 00:00:00
+h4==previewbutton True
+{'अनुसूची १-९ पारिवारिक विवरण .xlsx': 'https://dms.birgunjmun.gov.np/dataset/dd8ab9e0-478b-485c-bed0-26b4d341e795/resource/fdce3f81-c2a3-483b-aa88-82d8f62864aa/download/anusuchi-1-9-pariwarik-bibaran.xlsx'}
+Could not determine topic or folder name for अनुसूची १-९ पारिवारिक विवरण .xlsx. Skipping.

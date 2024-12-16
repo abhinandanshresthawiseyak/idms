@@ -6,12 +6,65 @@ import pandas as pd
 import duckdb
 from app.handler.budget_expense import save_json
 
-router = APIRouter()
+router = APIRouter(prefix="/api")
+
+column_translation_map = {
+    "क्र.सं.": "Serial No.",
+    "बजेट उपशीर्षक संकेत": "Budget Subheading Code",
+    "बजेट उपशीर्षक नाम": "Budget Subheading Name",
+    "बजेट चालु": "Current Budget",
+    "बजेट पूंजीगत": "Capital Budget",
+    "बजेट जम्मा": "Total Budget",
+    "खर्च चालु": "Current Expenditure",
+    "खर्च पूंजीगत": "Capital Expenditure",
+    "खर्च जम्मा": "Total Expenditure",
+    "खर्च (%)": "Expenditure (%)",
+    "मौज्दात चालु": "Current Balances",
+    "मौज्दात पूंजीगत": "Capital Balances",
+    "मौज्दात जम्मा": "Total Balances"
+}
+
+title_nepali_to_english = {
+    "लेकवेशी नगरपालिका": "Lekbeshi Municipality",
+    "लेकवेशी नगरपालिका- पशु सेवा शाखा": "Lekbeshi Municipality - Animal Services Department",
+    "लेकवेशी नगरपालिका-महिला तथा बालबालिका विकास शाखा": "Lekbeshi Municipality - Women and Child Development Department",
+    "लेववेशी नगरपालिका-कृषि विकाश शाखा": "Levbeshi Municipality - Agriculture Development Department",
+    "उद्योग तथा उपभोत्ता हित संरक्षण शाखा": "Industry and Consumer Protection Department",
+    "लेकवेशी नगर सहकारी शाखा": "Lekbeshi Municipality Cooperative Department",
+    "नगर न्यायिक समिती मुद्दा शाखा": "City Judicial Committee Legal Affairs Department",
+    "लेकवेशी नगरपालिका वन वातावरण तथा विपद व्यवस्थापन शाखा": "Lekbeshi Municipality Forest, Environment and Disaster Management Department",
+    "नागरिक आरोग्य केन्द्र": "Citizen Health Center",
+    "लेकवेशी नगरपालिका सूचना प्रविधी शाखा": "Lekbeshi Municipality Information Technology Department",
+    "लेकवेशी नगरपालिका प्रशासन शाखा": "Lekbeshi Municipality Administration Department",
+    "लेकवेशी नगरपालिकावडा नं.१": "Lekbeshi Municipality Ward No. 1",
+    "लेकवेशी नगरपालिकावडा नं.२": "Lekbeshi Municipality Ward No. 2",
+    "लेकवेशी नगरपालिकावडा नं.३": "Lekbeshi Municipality Ward No. 3",
+    "लेकवेशी नगरपालिकावडा नं.४": "Lekbeshi Municipality Ward No. 4",
+    "लेकवेशी नगरपालिकावडा नं.५": "Lekbeshi Municipality Ward No. 5",
+    "लेकवेशी नगरपालिकावडा नं.६": "Lekbeshi Municipality Ward No. 6",
+    "लेकवेशी नगरपालिकावडा नं.७": "Lekbeshi Municipality Ward No. 7",
+    "लेकवेशी नगरपालिकावडा नं.८": "Lekbeshi Municipality Ward No. 8",
+    "लेकवेशी नगरपालिकावडा नं.९": "Lekbeshi Municipality Ward No. 9",
+    "लेकवेशी नगरपालिकावडा नं.१०": "Lekbeshi Municipality Ward No. 10",
+    "लेकवेशी नगरपालिका - शिक्षा": "Lekbeshi Municipality - Education",
+    "लेकवेशी नगरपालिका - स्वास्थ्य": "Lekbeshi Municipality - Health",
+    "मुख्यमन्त्री रोजगार कार्यक्रम": "Chief Minister's Employment Program",
+    "संघीय सरकारबाट हस्तान्तरित कार्यक्रम (शसर्त अनुदान)": "Programs Transferred from the Federal Government (Conditional Grant)",
+    "संघीय सरकारबाट हस्तान्तरित कार्यक्रम (विषेश अनुदान)": "Programs Transferred from the Federal Government (Special Grant)",
+    "प्रदेश सरकारबाट हस्तान्तरित कार्यक्रम (शसर्त अनुदान)": "Programs Transferred from the Provincial Government (Conditional Grant)"
+}
 
 @router.get('/budget_expense')
-def get_compare_data(उपशीर्षक: List[str]= Query(...), cities: List[str] = Query(None), months:List[str] = Query(None)):
+def get_compare_data(उपशीर्षक: List[str]= Query(...), cities: List[str] = Query(None), months:List[str] = Query(None), nepali: bool=Query(True)):
 
     var={}
+
+    nepali_months = [
+        'baisakh', 'jestha', 'asar', 
+        'shrawan', 'bhadra', 'asoj', 
+        'kartik', 'mangsir', 'poush', 
+        'magh', 'falgun', 'chaitra'
+    ] # Just for sorting months in ascending order in returning back response 
 
     combined_data=[]
 
@@ -24,8 +77,8 @@ def get_compare_data(उपशीर्षक: List[str]= Query(...), cities: Li
     for city in cities:
         for month in months:
             # Construct the path to the JSON file
-            directory_path=f"./data/{city}/budget_expense/{month}"
-            file_path = f"./data/{city}/budget_expense/{month}/data.json"
+            directory_path=f"/app/backend/data/{city}/budget_expense/{month}"
+            file_path = f"/app/backend/data/{city}/budget_expense/{month}/data.json"
             
             # Ensure the directory exists
             if not os.path.exists(directory_path):
@@ -36,7 +89,7 @@ def get_compare_data(उपशीर्षक: List[str]= Query(...), cities: Li
             if not os.path.exists(file_path):
                 save_json(directory_path=directory_path,city=city,month=month)
 
-            with open(f'./data/{city}/budget_expense/{month}/data.json','r') as f:
+            with open(f'/app/backend/data/{city}/budget_expense/{month}/data.json','r') as f:
                 json_data=json.load(f)
 
             # print(json_data)
@@ -63,18 +116,43 @@ def get_compare_data(उपशीर्षक: List[str]= Query(...), cities: Li
     final_df['बजेट उपशीर्षक नाम'] = final_df['बजेट उपशीर्षक नाम'].fillna('')
     final_df['खर्च पूंजीगत'] = final_df['खर्च पूंजीगत'].fillna(0)  # If numeric, fill with 0
 
-    if उपशीर्षक[0]=='total':
-        # जम्मा
-        # print(final_df[final_df['क्र.सं.']=='जम्मा'])
-        return final_df[final_df['क्र.सं.']=='जम्मा'].to_dict(orient="records")
-        # pass
-    elif उपशीर्षक[0]=='all':
-        return final_df.to_dict(orient="records")
-        # return final_df[final_df['क्र.सं.']!='जम्मा'].to_dict(orient="records")
+    # if उपशीर्षक[0]=='total':
+    #     # जम्मा
+    #     # print(final_df[final_df['क्र.सं.']=='जम्मा'])
+    #     return final_df[final_df['क्र.सं.']=='जम्मा'].to_dict(orient="records")
+    #     # pass
+    # elif उपशीर्षक[0]=='all':
+    #     return final_df.to_dict(orient="records")
+    #     # return final_df[final_df['क्र.सं.']!='जम्मा'].to_dict(orient="records")
+    # else:
+    #     # उपशीर्षक.append('')
+    #     return final_df[final_df['बजेट उपशीर्षक नाम'].isin(उपशीर्षक)].to_dict(orient="records")
+    # Apply translations if nepali is False (User requests data in English)
+
+    if not nepali:
+        final_df.rename(columns=column_translation_map, inplace=True)
+        final_df['Budget Subheading Name'] = final_df['Budget Subheading Name'].map(title_nepali_to_english).fillna(final_df['Budget Subheading Name'])
+
+    # Filter based on specific subheadings
+    if उपशीर्षक[0] == 'total':
+        data= final_df[final_df['Serial No.' if not nepali else 'क्र.सं.'] == 'जम्मा'].to_dict(orient="records")
+    elif उपशीर्षक[0] == 'all':
+        data= final_df.to_dict(orient="records")
     else:
-        # उपशीर्षक.append('')
-        return final_df[final_df['बजेट उपशीर्षक नाम'].isin(उपशीर्षक)].to_dict(orient="records")
-    
+        field_name = 'Budget Subheading Name' if not nepali else 'बजेट उपशीर्षक नाम'
+        data= final_df[final_df[field_name].isin(उपशीर्षक)].to_dict(orient="records")
+
+    return {
+        "filterOptions":{
+            # "months": os.listdir(f"./data/{city}/budget_expense")
+            "months":sorted(
+                os.listdir(f"/app/backend/data/{city}/budget_expense"),
+                key=lambda month: nepali_months.index(month) if month in nepali_months else 13
+            )
+        },
+        "data":data
+    }
+
 # @router.get("/budget_expense/{city}")
 # def get_budget_expense_data(city:str, month: Optional[str] = None):
 #     directory_root="./data/"+city+"/budget_expense/"
