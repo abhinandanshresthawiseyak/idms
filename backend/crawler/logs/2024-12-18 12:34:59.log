@@ -1,55 +1,53 @@
 https://data.lekbeshimun.gov.np/datasets/health-dpt-data स्वास्थ्य कर्मचारी विवरण (२०७८-७९) (२०८०-०८१) 2024-10-30 00:00:00
 h4==previewbutton True
 {'स्वास्थ्य कर्मचारी विवरण (२०८०-०८१)': 'https://dms.lekbeshimun.gov.np/dataset/e4a37dfb-f978-46b4-b402-9cdacc08e972/resource/cd7a5513-ee59-48cc-8655-a07315b366e3/download/-copy-2.xlsx', 'स्वास्थ्य कर्मचारी विवरण (२०७८-०७९)': 'https://dms.lekbeshimun.gov.np/dataset/e4a37dfb-f978-46b4-b402-9cdacc08e972/resource/8e988fbe-5e0e-4529-ae5e-9ec2a30034ae/download/-33.xlsx'}
-File '/app/backend/data/lekbeshi/health_employee_details/2080-81/स्वास्थ्य कर्मचारी विवरण (२०८०-०८१).xlsx' already exists.
---2024-12-16 11:09:10--  https://dms.lekbeshimun.gov.np/dataset/e4a37dfb-f978-46b4-b402-9cdacc08e972/resource/cd7a5513-ee59-48cc-8655-a07315b366e3/download/-copy-2.xlsx
+--2024-12-18 06:50:05--  https://dms.lekbeshimun.gov.np/dataset/e4a37dfb-f978-46b4-b402-9cdacc08e972/resource/cd7a5513-ee59-48cc-8655-a07315b366e3/download/-copy-2.xlsx
 Resolving dms.lekbeshimun.gov.np (dms.lekbeshimun.gov.np)... 103.175.192.149
 Connecting to dms.lekbeshimun.gov.np (dms.lekbeshimun.gov.np)|103.175.192.149|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 24444 (24K) [application/vnd.openxmlformats-officedocument.spreadsheetml.sheet]
-Saving to: ‘/tmp/tmpapuqrvco/temp.xlsx’
+Saving to: ‘/app/backend/data/lekbeshi/health_employee_details/2080-81/स्वास्थ्य कर्मचारी विवरण (२०८०-०८१).xlsx’
 
-     0K .......... .......... ...                             100% 11.1M=0.002s
+     0K .......... .......... ...                             100%  193M=0s
 
-2024-12-16 11:09:10 (11.1 MB/s) - ‘/tmp/tmpapuqrvco/temp.xlsx’ saved [24444/24444]
+2024-12-18 06:50:05 (193 MB/s) - ‘/app/backend/data/lekbeshi/health_employee_details/2080-81/स्वास्थ्य कर्मचारी विवरण (२०८०-०८१).xlsx’ saved [24444/24444]
 
-File 'स्वास्थ्य कर्मचारी विवरण (२०८०-०८१).xlsx' hasn't been modified. Skipping replacing
-File '/app/backend/data/lekbeshi/health_employee_details/2078-79/स्वास्थ्य कर्मचारी विवरण (२०७८-०७९).xlsx' already exists.
---2024-12-16 11:09:10--  https://dms.lekbeshimun.gov.np/dataset/e4a37dfb-f978-46b4-b402-9cdacc08e972/resource/8e988fbe-5e0e-4529-ae5e-9ec2a30034ae/download/-33.xlsx
+Downloaded and saved: '/app/backend/data/lekbeshi/health_employee_details/2080-81/स्वास्थ्य कर्मचारी विवरण (२०८०-०८१).xlsx' from https://dms.lekbeshimun.gov.np/dataset/e4a37dfb-f978-46b4-b402-9cdacc08e972/resource/cd7a5513-ee59-48cc-8655-a07315b366e3/download/-copy-2.xlsx.
+--2024-12-18 06:50:05--  https://dms.lekbeshimun.gov.np/dataset/e4a37dfb-f978-46b4-b402-9cdacc08e972/resource/8e988fbe-5e0e-4529-ae5e-9ec2a30034ae/download/-33.xlsx
 Resolving dms.lekbeshimun.gov.np (dms.lekbeshimun.gov.np)... 103.175.192.149
 Connecting to dms.lekbeshimun.gov.np (dms.lekbeshimun.gov.np)|103.175.192.149|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 17206 (17K) [application/vnd.openxmlformats-officedocument.spreadsheetml.sheet]
-Saving to: ‘/tmp/tmppz4patkf/temp.xlsx’
+Saving to: ‘/app/backend/data/lekbeshi/health_employee_details/2078-79/स्वास्थ्य कर्मचारी विवरण (२०७८-०७९).xlsx’
 
-     0K .......... ......                                     100%  232M=0s
+     0K .......... ......                                     100%  174M=0s
 
-2024-12-16 11:09:10 (232 MB/s) - ‘/tmp/tmppz4patkf/temp.xlsx’ saved [17206/17206]
+2024-12-18 06:50:05 (174 MB/s) - ‘/app/backend/data/lekbeshi/health_employee_details/2078-79/स्वास्थ्य कर्मचारी विवरण (२०७८-०७९).xlsx’ saved [17206/17206]
 
-File 'स्वास्थ्य कर्मचारी विवरण (२०७८-०७९).xlsx' hasn't been modified. Skipping replacing
+Downloaded and saved: '/app/backend/data/lekbeshi/health_employee_details/2078-79/स्वास्थ्य कर्मचारी विवरण (२०७८-०७९).xlsx' from https://dms.lekbeshimun.gov.np/dataset/e4a37dfb-f978-46b4-b402-9cdacc08e972/resource/8e988fbe-5e0e-4529-ae5e-9ec2a30034ae/download/-33.xlsx.
 https://data.lekbeshimun.gov.np/datasets/progress-report लेकवेशी नगरपालिका प्रगति विवरण २०८१ ०८२ 2024-12-05 00:00:00
 h4==previewbutton True
 Message: 
 Stacktrace:
-#0 0x60cbd892231a <unknown>
-#1 0x60cbd84386e0 <unknown>
-#2 0x60cbd84873e6 <unknown>
-#3 0x60cbd8487681 <unknown>
-#4 0x60cbd84ccb04 <unknown>
-#5 0x60cbd84ab48d <unknown>
-#6 0x60cbd84c9ed7 <unknown>
-#7 0x60cbd84ab203 <unknown>
-#8 0x60cbd8479cc0 <unknown>
-#9 0x60cbd847ac9e <unknown>
-#10 0x60cbd88efd0b <unknown>
-#11 0x60cbd88f3c92 <unknown>
-#12 0x60cbd88dcb3c <unknown>
-#13 0x60cbd88f4807 <unknown>
-#14 0x60cbd88c20df <unknown>
-#15 0x60cbd8911578 <unknown>
-#16 0x60cbd8911740 <unknown>
-#17 0x60cbd8921196 <unknown>
-#18 0x7e5daf2591c4 <unknown>
+#0 0x62ec687c331a <unknown>
+#1 0x62ec682d96e0 <unknown>
+#2 0x62ec683283e6 <unknown>
+#3 0x62ec68328681 <unknown>
+#4 0x62ec6836db04 <unknown>
+#5 0x62ec6834c48d <unknown>
+#6 0x62ec6836aed7 <unknown>
+#7 0x62ec6834c203 <unknown>
+#8 0x62ec6831acc0 <unknown>
+#9 0x62ec6831bc9e <unknown>
+#10 0x62ec68790d0b <unknown>
+#11 0x62ec68794c92 <unknown>
+#12 0x62ec6877db3c <unknown>
+#13 0x62ec68795807 <unknown>
+#14 0x62ec687630df <unknown>
+#15 0x62ec687b2578 <unknown>
+#16 0x62ec687b2740 <unknown>
+#17 0x62ec687c2196 <unknown>
+#18 0x7a99a2f531c4 <unknown>
 
 {}
 https://data.lekbeshimun.gov.np/datasets/administration-data लेकवेशी कर्मचारी विवरण २०७९ 2023-09-13 00:00:00
@@ -130,30 +128,9 @@ h4==previewbutton True
 Could not determine topic or folder name for वडा अध्यक्ष तथा वडा सदस्यहरुको नामावली विवरण.xlsx. Skipping.
 https://data.birgunjmun.gov.np/datasets/national-census-digital-profile वीरगंज जनसकङ्ख्किक प्रतिवेदन 2024-09-13 00:00:00
 h4==previewbutton True
-Message: 
-Stacktrace:
-#0 0x60cbd892231a <unknown>
-#1 0x60cbd84386e0 <unknown>
-#2 0x60cbd84873e6 <unknown>
-#3 0x60cbd8487681 <unknown>
-#4 0x60cbd84ccb04 <unknown>
-#5 0x60cbd84ab48d <unknown>
-#6 0x60cbd84c9ed7 <unknown>
-#7 0x60cbd84ab203 <unknown>
-#8 0x60cbd8479cc0 <unknown>
-#9 0x60cbd847ac9e <unknown>
-#10 0x60cbd88efd0b <unknown>
-#11 0x60cbd88f3c92 <unknown>
-#12 0x60cbd88dcb3c <unknown>
-#13 0x60cbd88f4807 <unknown>
-#14 0x60cbd88c20df <unknown>
-#15 0x60cbd8911578 <unknown>
-#16 0x60cbd8911740 <unknown>
-#17 0x60cbd8921196 <unknown>
-#18 0x7e5daf2591c4 <unknown>
-
-{'अनुसुचि १७ - ज्येष्ठ नागरिक र सामाजिक सुरक्षा भत्ता प्राप्त गर्न योग्य जनसङ्ख्याको वितरण': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/f4c26acf-deff-4deb-b31a-0251a4d5e49d/download/anusuchi-17-jesstha-nagrik-bhatta-khane-ko-sankhya.xlsx', 'अनुसुचि १९ - वडा अनुसार विवाह दर्ताको अवस्था': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/936878f2-7059-43dd-bb59-a9ef7df6f68a/download/anusuchi-19-ward-anusr-balbihawa-darta-ko-awastha.xlsx', 'अनुसुचि २० - वडा अनुसार १० वर्ष र सोभन्दा बढि ऊमेरका एकल महिलाको अवस्था': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/6041b2ee-dc25-43ee-9059-3d67048c8685/download/anusuchi-20-ward-anusar-10-barsa-vanda-kam-umer-ko-akal-mahila.xlsx', 'अनुसुचि २१ - वडा अनुसार अपाङ्गता भएका व्यक्तिको दर': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/11fe060f-3333-4038-92bc-c8fa276858b5/download/anusuchi-21-ward-anusar-apangta-byakti-haru-bibaran.xlsx', 'अनुसुचि २२ - ५ वर्ष र सोभन्दा बढि ऊमेरको साक्षरता विवरण': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/cdd4c6e1-8a2e-4622-9a71-61eccc98925a/download/anusuchi-22-5-barsa-vanda-badhi-umer-ko-sacharta-bibaran.xlsx', 'अनुसुचि २३ - वडा अनुसार बालबालिकाको साक्षरता दर': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/abde6860-a5d6-4102-b0dc-b4c9a552b494/download/anusuchi-.xlsx', 'अनुसुचि २४ - ५ देखि २५ वर्षका हाल स्कुल गईरहेको वा विगतमा गएको वा कहिल्यै नगएको विवरण': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/ad264576-52d4-47b2-b8e7-65fdbefa5ab3/download/anusuchi-24-5-barsa-dekhi-25-barsa-samma-school-gaeraheka-bigat-ma-gayeka-ra-kahilai-nagayeka-s.xlsx', 'अनुसुचि २५ - वडा अनुसार ५ देखि २५ वर्षका स्कुल कलेज भाहिर रहेका व्यक्तिहरुको विवरण': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/f46ec2e5-a79b-4603-967a-d3ab38511894/download/-.xlsx', 'अनुसुचि २६ - वडा अनुसार जन्मस्थानको आधारमा जनसङ्ख्या विवरण': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/e7ac94d6-0ecc-43bb-9dab-95a0eab5b638/download/anusuchi-26-janma-sthan-ko-adharma-jansankhya-bibaran.xlsx', 'अनुसुचि २७ - वडा अनुसार १० वर्ष र सोभन्दा बढि ऊमेरका व्यक्तिको अघिल्लो १२ महिनामा कम्तिमा एक दिन आर्थिक काममा संलग्नता': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/74c2ff2a-7d9e-4667-a488-edb7e80acd12/download/anusuchi-27.xlsx', 'अनुसुचि २८ - वडा अनुसार १० वर्ष देखि १७ वर्ष ऊमेरका व्यक्तिको अघिल्लो १२ महिनामा कम्तिमा एक दिन आर्थिक काममा संलग्नता': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/6ae06a0a-8ea9-47d9-95e4-542520329903/download/-.xlsx', 'अनुसुचि २९ - आर्थिक काममा संलग्न मध्ये आर्थिक रुपले सक्रिय तथा रोजगार बेरोजगारको विवरण': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/07aa3efe-089b-4a2f-a97e-27bf5034b6e3/download/anusuchi-29.xlsx', 'अनुसुचि ३० - कृषि तथा गैर कृषि क्षेत्रमा संलग्न जनसङ्ख्या (% मा)': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/fa7c3a45-68af-46c6-8a08-0a7a2ac31a26/download/anusuchi-30.xlsx', 'अनुसुचि ३१ - ५ वर्ष र सोभन्दा बढि ऊमेरका बालबालिकाको जन्मदर्ताको अवस्था': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/3e880be9-0aa3-421f-b2b0-51a3d85937da/download/anusuchi-31.xlsx', 'अनुसुचि -१६ वडा अनुसार बाल आश्रित , ज्येसठ नागरिकआश्रित र कुल आश्रित अनुपात': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/027e36ec-41cf-4400-b290-cb44e1ebb0ce/download/anusuchi-16.xlsx'}
+{'अनुसुचि १७ - ज्येष्ठ नागरिक र सामाजिक सुरक्षा भत्ता प्राप्त गर्न योग्य जनसङ्ख्याको वितरण': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/f4c26acf-deff-4deb-b31a-0251a4d5e49d/download/anusuchi-17-jesstha-nagrik-bhatta-khane-ko-sankhya.xlsx', 'अनुसुचि १८ - वडा अनुसार परिवारमुलिको विवरण': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/8687f1f2-c2a7-48cd-977f-f5cd8545404f/download/anusuchi-18-ward-anusar-pariwar-muliko-awastha.xlsx', 'अनुसुचि १९ - वडा अनुसार विवाह दर्ताको अवस्था': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/936878f2-7059-43dd-bb59-a9ef7df6f68a/download/anusuchi-19-ward-anusr-balbihawa-darta-ko-awastha.xlsx', 'अनुसुचि २० - वडा अनुसार १० वर्ष र सोभन्दा बढि ऊमेरका एकल महिलाको अवस्था': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/6041b2ee-dc25-43ee-9059-3d67048c8685/download/anusuchi-20-ward-anusar-10-barsa-vanda-kam-umer-ko-akal-mahila.xlsx', 'अनुसुचि २१ - वडा अनुसार अपाङ्गता भएका व्यक्तिको दर': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/11fe060f-3333-4038-92bc-c8fa276858b5/download/anusuchi-21-ward-anusar-apangta-byakti-haru-bibaran.xlsx', 'अनुसुचि २२ - ५ वर्ष र सोभन्दा बढि ऊमेरको साक्षरता विवरण': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/cdd4c6e1-8a2e-4622-9a71-61eccc98925a/download/anusuchi-22-5-barsa-vanda-badhi-umer-ko-sacharta-bibaran.xlsx', 'अनुसुचि २३ - वडा अनुसार बालबालिकाको साक्षरता दर': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/abde6860-a5d6-4102-b0dc-b4c9a552b494/download/anusuchi-.xlsx', 'अनुसुचि २४ - ५ देखि २५ वर्षका हाल स्कुल गईरहेको वा विगतमा गएको वा कहिल्यै नगएको विवरण': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/ad264576-52d4-47b2-b8e7-65fdbefa5ab3/download/anusuchi-24-5-barsa-dekhi-25-barsa-samma-school-gaeraheka-bigat-ma-gayeka-ra-kahilai-nagayeka-s.xlsx', 'अनुसुचि २५ - वडा अनुसार ५ देखि २५ वर्षका स्कुल कलेज भाहिर रहेका व्यक्तिहरुको विवरण': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/f46ec2e5-a79b-4603-967a-d3ab38511894/download/-.xlsx', 'अनुसुचि २६ - वडा अनुसार जन्मस्थानको आधारमा जनसङ्ख्या विवरण': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/e7ac94d6-0ecc-43bb-9dab-95a0eab5b638/download/anusuchi-26-janma-sthan-ko-adharma-jansankhya-bibaran.xlsx', 'अनुसुचि २७ - वडा अनुसार १० वर्ष र सोभन्दा बढि ऊमेरका व्यक्तिको अघिल्लो १२ महिनामा कम्तिमा एक दिन आर्थिक काममा संलग्नता': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/74c2ff2a-7d9e-4667-a488-edb7e80acd12/download/anusuchi-27.xlsx', 'अनुसुचि २८ - वडा अनुसार १० वर्ष देखि १७ वर्ष ऊमेरका व्यक्तिको अघिल्लो १२ महिनामा कम्तिमा एक दिन आर्थिक काममा संलग्नता': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/6ae06a0a-8ea9-47d9-95e4-542520329903/download/-.xlsx', 'अनुसुचि २९ - आर्थिक काममा संलग्न मध्ये आर्थिक रुपले सक्रिय तथा रोजगार बेरोजगारको विवरण': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/07aa3efe-089b-4a2f-a97e-27bf5034b6e3/download/anusuchi-29.xlsx', 'अनुसुचि ३० - कृषि तथा गैर कृषि क्षेत्रमा संलग्न जनसङ्ख्या (% मा)': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/fa7c3a45-68af-46c6-8a08-0a7a2ac31a26/download/anusuchi-30.xlsx', 'अनुसुचि ३१ - ५ वर्ष र सोभन्दा बढि ऊमेरका बालबालिकाको जन्मदर्ताको अवस्था': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/3e880be9-0aa3-421f-b2b0-51a3d85937da/download/anusuchi-31.xlsx', 'अनुसुचि -१६ वडा अनुसार बाल आश्रित , ज्येसठ नागरिकआश्रित र कुल आश्रित अनुपात': 'https://dms.birgunjmun.gov.np/dataset/fa9b618d-ad74-497c-8819-cc7d68f71bbd/resource/027e36ec-41cf-4400-b290-cb44e1ebb0ce/download/anusuchi-16.xlsx'}
 Could not determine topic or folder name for अनुसुचि १७ - ज्येष्ठ नागरिक र सामाजिक सुरक्षा भत्ता प्राप्त गर्न योग्य जनसङ्ख्याको वितरण. Skipping.
+Could not determine topic or folder name for अनुसुचि १८ - वडा अनुसार परिवारमुलिको विवरण. Skipping.
 Could not determine topic or folder name for अनुसुचि १९ - वडा अनुसार विवाह दर्ताको अवस्था. Skipping.
 Could not determine topic or folder name for अनुसुचि २० - वडा अनुसार १० वर्ष र सोभन्दा बढि ऊमेरका एकल महिलाको अवस्था. Skipping.
 Could not determine topic or folder name for अनुसुचि २१ - वडा अनुसार अपाङ्गता भएका व्यक्तिको दर. Skipping.

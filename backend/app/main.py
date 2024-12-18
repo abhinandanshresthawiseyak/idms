@@ -8,7 +8,8 @@ from starlette.middleware.base import BaseHTTPMiddleware
 from collections import defaultdict
 from fastapi.middleware.cors import CORSMiddleware
 
-# A dictionary to store a TokenBucket for each client with blocking duration 15 sec and refill_rate 1 token/s with 5 tokens capacity 
+# A dictionary to store a TokenBucket for each client with blocking duration 15 sec and refill_rate 1 token/s with 35 tokens capacity 
+# Adjust acoording to requirements
 buckets = defaultdict(lambda: TokenBucket(capacity=35, refill_rate=1, block_duration=15))
 
 # A middleware class to limit API Calls for every client with IP Address 

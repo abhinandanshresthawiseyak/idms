@@ -59,6 +59,14 @@ def get_metadata(file_path, row):
     meta_df = pd.read_excel(file_path, header=row,nrows=0, engine="openpyxl")
     return meta_df.columns[0]
 
+# Function to replace all instances of "लेकवेशी " with ""
+def remove_prefix(data):
+    for item in data:
+        for key, value in item.items():
+            if isinstance(value, str) and "लेकवेशी " in value:
+                item[key] = value.replace("लेकवेशी ", "")
+    return data
+
 # def budgetexpense_to_json(city, month, excel_path):
 #     # Read the Excel file
 #     df = pd.read_excel(excel_path, engine='openpyxl',skiprows=5)
@@ -183,3 +191,4 @@ def get_metadata(file_path, row):
     # json_data = result_df.to_json(orient="records", force_ascii=False)
     
     # return json_data
+

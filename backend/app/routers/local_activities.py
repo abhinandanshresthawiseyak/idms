@@ -494,8 +494,8 @@ def get_compare_data(वर्ग :List[str]= Query(...), कार्यक्�
     for city in cities:
         for year in years:
             # Construct the path to the JSON file
-            directory_path=f"./data/{city}/local_activities/{year}"
-            file_path = f"./data/{city}/local_activities/{year}/data.json"
+            directory_path=f"/app/backend/data/{city}/local_activities/{year}"
+            file_path = f"/app/backend/data/{city}/local_activities/{year}/data.json"
             
             # Ensure the directory exists
             if not os.path.exists(directory_path):
@@ -506,7 +506,7 @@ def get_compare_data(वर्ग :List[str]= Query(...), कार्यक्�
             if not os.path.exists(file_path):
                 save_json(directory_path=directory_path,city=city,year=year)
 
-            with open(f'./data/{city}/local_activities/{year}/data.json','r') as f:
+            with open(f'/app/backend/data/{city}/local_activities/{year}/data.json','r') as f:
                 json_data=json.load(f)
 
             # print(json_data)
@@ -552,7 +552,7 @@ def get_compare_data(वर्ग :List[str]= Query(...), कार्यक्�
 
     return {
         "filterOptions":{
-            "years": os.listdir(f"./data/{cities[0]}/local_activities")
+            "years": os.listdir(f"/app/backend/data/{cities[0]}/local_activities")
         },
         "data":data
     }

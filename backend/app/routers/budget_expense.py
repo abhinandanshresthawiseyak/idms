@@ -5,6 +5,7 @@ from typing import List
 import pandas as pd
 import duckdb
 from app.handler.budget_expense import save_json
+from app.utils import remove_prefix
 
 router = APIRouter(prefix="/api")
 
@@ -142,6 +143,7 @@ def get_compare_data(उपशीर्षक: List[str]= Query(...), cities: Li
         field_name = 'Budget Subheading Name' if not nepali else 'बजेट उपशीर्षक नाम'
         data= final_df[final_df[field_name].isin(उपशीर्षक)].to_dict(orient="records")
 
+
     return {
         "filterOptions":{
             # "months": os.listdir(f"./data/{city}/budget_expense")
@@ -150,7 +152,7 @@ def get_compare_data(उपशीर्षक: List[str]= Query(...), cities: Li
                 key=lambda month: nepali_months.index(month) if month in nepali_months else 13
             )
         },
-        "data":data
+        "data": data
     }
 
 # @router.get("/budget_expense/{city}")

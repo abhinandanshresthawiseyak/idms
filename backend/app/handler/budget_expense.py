@@ -5,7 +5,7 @@ from fastapi import HTTPException
 import pandas as pd
 import time
 import json
-from app.utils import get_metadata, nepali_to_english_number
+from app.utils import get_metadata, nepali_to_english_number, remove_prefix
 
 def budgetexpense_to_json(city, month, excel_path):
     # Read the Excel file
@@ -40,7 +40,7 @@ def budgetexpense_to_json(city, month, excel_path):
     
     result = {
         "metadata": metadata,
-        "data": df.to_dict(orient="records")
+        "data": remove_prefix(df.to_dict(orient="records"))
     }
     
     # Save JSON with metadata
